@@ -21,6 +21,18 @@ a{
     top: 200px;
     left: 0px;
     float: left;
+    background-color:#DDD;
+}
+.leftSlide > h2{margin-top: 10px;}
+.left-menu { transition: all 0.25s; } 
+.left-menu-enter-active { transition: all 0.25s ease; width:19%; height:873px;} 
+.left-menu-leave-active { transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1); } 
+.left-menu-enter, .left-menu-leave-active { opacity: 0; transform: translateX(-100%); }
+.contents{
+    width: 315px;
+    height: 300px;
+    margin: 20px;
+    background-color:black;
 }
 .introduceMe{
     width: 19%;
