@@ -7,7 +7,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d4910abfb35ac798f0a645afc1a160e1"></script>
-	  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d4910abfb35ac798f0a645afc1a160e1"></script>
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   </head>
   <body>
@@ -55,21 +54,21 @@
 
       // 다각형 객체를 구성할 좌표배열입니다 
       var path = [
-        new kakao.maps.LatLng(36.34926, 127.40287),
-				new kakao.maps.LatLng(36.34926, 127.37087),
-				new kakao.maps.LatLng(36.33326, 127.3987),
-        new kakao.maps.LatLng(36.32326, 127.32087),
-        new kakao.maps.LatLng(36.31326, 127.35087),
-        new kakao.maps.LatLng(36.32526, 127.36087)
-      ];
+	new kakao.maps.LatLng(33.45086654081833, 126.56906858718982),
+	new kakao.maps.LatLng(33.45010890948828, 126.56898629127468),
+	new kakao.maps.LatLng(33.44979857909499, 126.57049357211622),
+	new kakao.maps.LatLng(33.450137483918496, 126.57202991943016),
+	new kakao.maps.LatLng(33.450706188506054, 126.57223147947938),
+	new kakao.maps.LatLng(33.45164068091554, 126.5713126693152)
+];
 
-      var hole = [
-        new kakao.maps.LatLng(36.33326, 127.37087),
-        new kakao.maps.LatLng(36.33326, 127.37087),
-        new kakao.maps.LatLng(36.33326, 127.37087),
-        new kakao.maps.LatLng(36.33326, 127.37087),
-        new kakao.maps.LatLng(36.33326, 127.37087),
-        new kakao.maps.LatLng(36.33326, 127.37087)
+var hole = [
+	new kakao.maps.LatLng(33.4506262491095, 126.56997323165163),
+	new kakao.maps.LatLng(33.45029422800042, 126.57042659659218),
+	new kakao.maps.LatLng(33.45032339792896, 126.5710395101452),
+	new kakao.maps.LatLng(33.450622037218295, 126.57136070280123),
+	new kakao.maps.LatLng(33.450964416902046, 126.57129448564594),
+	new kakao.maps.LatLng(33.4510527150534, 126.57075627706975)
       ];
 
       // 다각형을 생성하고 지도에 표시합니다
