@@ -61,9 +61,4 @@ h2{margin-top:50%}
     margin: 0 auto;
     margin-top: 100px;
     border-radius: 70px;
-    -ms-user-select: none; 
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
 }
