@@ -576,9 +576,100 @@
 		$("#city").val("유성구");
 		alert("대덕구");
 	});     
+	// 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
+	var linePath1 = [
+		new kakao.maps.LatLng(36.264952562870626, 127.28650283772849), 
+		new kakao.maps.LatLng(36.26424778103431, 127.29192801367341), 
+		new kakao.maps.LatLng(36.26432357984504, 127.29225657617519), 
+		new kakao.maps.LatLng(36.2729730570564, 127.31002903127629), 
+		new kakao.maps.LatLng(36.32891177126495, 127.33589695376509), 
+		new kakao.maps.LatLng(36.35833978586452, 127.3583620673272), 
+		new kakao.maps.LatLng(36.36405674708539, 127.36538286450639), 
+		new kakao.maps.LatLng(36.37188309001822, 127.37637901685447), 
+		new kakao.maps.LatLng(36.37197093053076, 127.3771009772982), 
+		new kakao.maps.LatLng(36.37128557199422, 127.38780362693716), 
+		new kakao.maps.LatLng(36.37149494593694, 127.39267710030857), 
+		new kakao.maps.LatLng(36.37141307248001, 127.39291069913243), 
+		new kakao.maps.LatLng(36.37861552754571, 127.40972198935118), 
+		new kakao.maps.LatLng(36.41533954036995, 127.4196818487461), 
+		new kakao.maps.LatLng(36.45489772971251, 127.4008249419556), 
+		new kakao.maps.LatLng(36.454941642061755, 127.40583110027674) 
+	];
+
+	// 지도에 표시할 선을 생성합니다
+	var polyline1 = new kakao.maps.Polyline({
+		path: linePath1, // 선을 구성하는 좌표배열 입니다
+		strokeWeight: 5, // 선의 두께 입니다
+		strokeColor: '#5D5D5D', // 선의 색깔입니다
+		strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+		strokeStyle: 'solid' // 선의 스타일입니다
+	});
+
+	// 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
+	var linePath2 = [
+		new kakao.maps.LatLng(36.26239162541566, 127.3757695444067), 
+		new kakao.maps.LatLng(36.27213502711803, 127.37238842463121), 
+		new kakao.maps.LatLng(36.29013037397541, 127.36991360614131), 
+		new kakao.maps.LatLng(36.29196012080975, 127.37270525489377), 
+		new kakao.maps.LatLng(36.291959982009445, 127.37274978241553), 
+		new kakao.maps.LatLng(36.34959788214979, 127.40373798291184), 
+		new kakao.maps.LatLng(36.37141307248001, 127.39291069913243)
+	];
+
+	// 지도에 표시할 선을 생성합니다
+	var polyline2 = new kakao.maps.Polyline({
+		path: linePath2, // 선을 구성하는 좌표배열 입니다
+		strokeWeight: 5, // 선의 두께 입니다
+		strokeColor: '#5D5D5D', // 선의 색깔입니다
+		strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+		strokeStyle: 'solid' // 선의 스타일입니다
+	});
+
+	// 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
+	var linePath3 = [
+		new kakao.maps.LatLng(36.212905303257614, 127.40798892953342), 
+		new kakao.maps.LatLng(36.23819255181774, 127.44228886825773), 
+		new kakao.maps.LatLng(36.2886053107907, 127.4273035066069), 
+		new kakao.maps.LatLng(36.3013227487268, 127.45550683596157), 
+		new kakao.maps.LatLng(36.34959788214979, 127.40373798291184) 
+	];
+
+	// 지도에 표시할 선을 생성합니다
+	var polyline3 = new kakao.maps.Polyline({
+		path: linePath3, // 선을 구성하는 좌표배열 입니다
+		strokeWeight: 5, // 선의 두께 입니다
+		strokeColor: '#5D5D5D', // 선의 색깔입니다
+		strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+		strokeStyle: 'solid' // 선의 스타일입니다
+	});
+	// 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
+	var linePath4 = [
+		new kakao.maps.LatLng(36.425243791088214, 127.49376947289332), 
+		new kakao.maps.LatLng(36.400258600086055, 127.4553366674433), 
+		new kakao.maps.LatLng(36.35682556080772, 127.43075943250508), 
+		new kakao.maps.LatLng(36.35546758860786, 127.4274709082935), 
+		new kakao.maps.LatLng(36.35502576355719, 127.42754090898055), 
+		new kakao.maps.LatLng(36.34092608961693, 127.4149881605903) 
+	];
+
+	// 지도에 표시할 선을 생성합니다
+	var polyline4 = new kakao.maps.Polyline({
+		path: linePath4, // 선을 구성하는 좌표배열 입니다
+		strokeWeight: 5, // 선의 두께 입니다
+		strokeColor: '#5D5D5D', // 선의 색깔입니다
+		strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+		strokeStyle: 'solid' // 선의 스타일입니다
+	});    
+	// 지도에 선을 표시합니다 
+	polyline1.setMap(map);  
+	// 지도에 선을 표시합니다 
+	polyline2.setMap(map); 
+	// 지도에 선을 표시합니다 
+	polyline3.setMap(map);
+	// 지도에 선을 표시합니다 
+	polyline4.setMap(map);  
 	// 마우스 드래그와 모바일 터치를 이용한 지도 이동을 막는다
 	map.setDraggable(false);		
-
 	// 마우스 휠과 모바일 터치를 이용한 지도 확대, 축소를 막는다
 	map.setZoomable(false);    
     </script>
