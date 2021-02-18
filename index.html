@@ -28,9 +28,8 @@
        </transition>
       </div>
       <div class = "clickMap">
-        <div id="map">
-          
-        </div>
+        <div id="map"></div>
+	<input type ="hidden" id ="city" value = "" />
       </div>
     </div>
   </body>
@@ -548,24 +547,34 @@
 	daedeokguPolygon.setMap(map);  
 	// 다각형에 마우스다운 이벤트를 등록합니다
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() { 
-	    console.log(event);
-	    alert("동구");
+	    	console.log(event);
+		$("#city").val();
+		$("#city").val("동구");
+	    	alert("동구");
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() { 
-	    console.log(event);
-	    alert("중구");
+		console.log(event);
+		$("#city").val();
+		$("#city").val("중구");
+		alert("중구");
 	});   
 	kakao.maps.event.addListener(seoguPolygon, 'mousedown', function() { 
-	    console.log(event);
-	    alert("서구");
+		console.log(event);
+		$("#city").val();
+		$("#city").val("서구");
+		alert("서구");
 	});   
 	kakao.maps.event.addListener(yuseongguPolygon, 'mousedown', function() { 
-	    console.log(event);
-	    alert("유성구");
+		console.log(event);
+		$("#city").val();
+		$("#city").val("유성구");
+		alert("유성구");
 	});   
 	kakao.maps.event.addListener(daedeokguPolygon, 'mousedown', function() { 
-	    console.log(event);
-	    alert("대덕구");
+		console.log(event);
+		$("#city").val();
+		$("#city").val("유성구");
+		alert("대덕구");
 	});     
 	// 마우스 드래그와 모바일 터치를 이용한 지도 이동을 막는다
 	map.setDraggable(false);		
