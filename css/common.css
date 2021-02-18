@@ -29,9 +29,9 @@ a{
 .left-menu-leave-active { transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1); } 
 .left-menu-enter, .left-menu-leave-active { opacity: 0; transform: translateX(-100%); }
 .contents{
-    width: 315px;
-    height: 300px;
-    margin: 20px;
+    width: 90%;
+    height: 35%;
+    margin: 5%;
     background-color:black;
 }
 .introduceMe{
