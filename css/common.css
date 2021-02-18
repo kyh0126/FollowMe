@@ -23,7 +23,7 @@ a{
     float: left;
     background-color:#DDD;
 }
-.leftSlide > h2{margin-top: 10px;}
+.leftSlide > h2{margin-top: 10px;text-align: center;}
 .left-menu { transition: all 0.25s; } 
 .left-menu-enter-active { transition: all 0.25s ease; width:19%; height:873px;} 
 .left-menu-leave-active { transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1); } 
@@ -50,7 +50,7 @@ a{
 .menuIcon{
     width: 25px;
     font-size: 25px;
-    margin: 10% 15%;
+    margin: 5% 12%;
     text-align: left;
     cursor: pointer;
 }
