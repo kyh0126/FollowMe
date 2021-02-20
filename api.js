@@ -1,6 +1,6 @@
 function kakaoserch(){
 
-		var city = $("#city").val()+" 갈만한 곳";
+		var city = "대전" + $("#city").val()+" 갈만한 곳";
 		$.ajax({
 			method : "get",
 			url : "https://dapi.kakao.com/v2/search/web",
