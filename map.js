@@ -780,3 +780,14 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	map.setDraggable(false);		
 	// 마우스 휠과 모바일 터치를 이용한 지도 확대, 축소를 막는다
 	map.setZoomable(false);
+
+	var isDisabled = false;
+	$('#map').click(function () {
+	    if (isDisabled) {  //<-( 1 ) 수행가능여부 검사
+	      return false;
+	    } else {
+	      isDisabled = true; //<-( 2 ) 실행 불가능하도록 flag 변경
+	      doSomthing();
+	      isDisable = false;    //수행가능하도록 열어준다. settimeout을통해 X초 뒤에 풀어주는것도 방법이다.
+	    }
+	});
