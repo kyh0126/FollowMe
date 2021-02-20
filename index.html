@@ -51,6 +51,11 @@
     </div>
   </body>
   <script>
+	$document.ready(function(){
+		$("#map").dblclick(function() {
+			location.reload();
+		});
+	});
 	new Vue({
 		el: '.introduceMe',
 		data:{
