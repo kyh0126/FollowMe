@@ -787,7 +787,6 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	      return false;
 	    } else {
 	      isDisabled = true; //<-( 2 ) 실행 불가능하도록 flag 변경
-	      doSomthing();
 	      isDisable = false;    //수행가능하도록 열어준다. settimeout을통해 X초 뒤에 풀어주는것도 방법이다.
 	    }
 	});
