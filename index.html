@@ -53,7 +53,7 @@
   <script>
 	$(document).ready(function(){
 		kakaoimgserch();
-		anjanj();
+		
 		$("#map").dblclick(function() {
 			location.reload();
 		});
@@ -74,7 +74,7 @@
 			url : "https://dapi.kakao.com/v2/search/image",
 			data : data,
 			success : function(t){
-				img += "<img src = '"+t.documents[0].thumbnail_url+"' style = 'width:100%; height:100%;' />";
+				img = "<img src = '"+t.documents[0].thumbnail_url+"' style = 'width:100%; height:100%;' />";
 
 				$("#kakaoImg").html(img);
 	  		  }
@@ -104,14 +104,14 @@
 			}
 		};
 		xhr.send('');
-/*
+
 		$.getJSON("http://apis.data.go.kr/6300000/tourDataService/tourDataListJson?ServiceKey=aggV%2F4hQnmywSfVZz7PL6hL%2BNUNEzkEWVPJF2Y%2FSR36XrnSL0Mssjmq01Sa2QXeytohSyi%2FkfW%2BETYj%2BaZ9uRQ%3D%3D" , function(json){
 			if(json != null){
 				for(var i =0; json.length; i++){
 					console.log(i);
 				}
 			}
-		});*/
+		});
 
 	}
     </script>
