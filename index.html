@@ -52,6 +52,8 @@
   </body>
   <script>
 	$(document).ready(function(){
+		kakaoimgserch();
+		anjanj();
 		$("#map").dblclick(function() {
 			location.reload();
 		});
@@ -61,6 +63,48 @@
 		data:{
 			show: false
 		}
-	});   
+	}); 
+	function kakaoimgserch(){
+		var img = "";
+		var data = { "query" : "대전 탄반동"} ;
+		$.ajax({
+			type :"GET",
+			dataType : "JSON",
+			headers : {Authorization : "KakaoAK 3d28fa1112d233772d80357459a0af7b"},
+			url : "https://dapi.kakao.com/v2/search/image",
+			data : data,
+			success : function(t){
+				img += "<img src = '"+t.documents[0].thumbnail_url+"' style = 'width:100%; height:100%;' />";
+
+				$("#kakaoImg").html(img);
+	  		  }
+
+		});
+		
+	}
+	function anjanj(){
+		/*
+		var xhr = new XMLHttpRequest();
+		var url = 'http://apis.data.go.kr/6300000/tourDataService/tourDataListJson'; 
+		var queryParams = '?' + encodeURIComponent('ServiceKey') + '='+'aggV%2F4hQnmywSfVZz7PL6hL%2BNUNEzkEWVPJF2Y%2FSR36XrnSL0Mssjmq01Sa2QXeytohSyi%2FkfW%2BETYj%2BaZ9uRQ%3D%3D';
+
+		xhr.open('GET', url + queryParams);
+		xhr.onreadystatechange = function () {
+			
+			if (this.readyState == 4) {
+				alert('Status: '+this.status+'nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'nBody: '+this.responseText);
+			}
+		};
+		xhr.send('');*/
+
+		$.getJSON("http://apis.data.go.kr/6300000/tourDataService/tourDataListJson?ServiceKey=aggV%2F4hQnmywSfVZz7PL6hL%2BNUNEzkEWVPJF2Y%2FSR36XrnSL0Mssjmq01Sa2QXeytohSyi%2FkfW%2BETYj%2BaZ9uRQ%3D%3D" , function(json){
+			if(json != null){
+				for(var i =0; json.length; i++){
+					console.log(i);
+				}
+			}
+		});
+
+	}
     </script>
 </html>
