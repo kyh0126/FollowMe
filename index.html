@@ -84,7 +84,15 @@
 	}
 	function anjanj(){
 		
-		var xhr = new XMLHttpRequest();
+		// 구버전을 위한 호환성 코드입니다. 더 이상 이렇게 작성하지 않아도 됩니다.
+		var xhr;
+		if (window.XMLHttpRequest) { // 모질라, 사파리, IE7+ ...
+		    xhr = new XMLHttpRequest();
+		} else if (window.ActiveXObject) { // IE 6 이하
+		    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		
+		
 		var url = 'http://apis.data.go.kr/6300000/tourDataService/tourDataListJson'; 
 		var queryParams = '?' + encodeURIComponent('ServiceKey') + '='+'aggV%2F4hQnmywSfVZz7PL6hL%2BNUNEzkEWVPJF2Y%2FSR36XrnSL0Mssjmq01Sa2QXeytohSyi%2FkfW%2BETYj%2BaZ9uRQ%3D%3D';
 
