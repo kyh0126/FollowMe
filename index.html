@@ -29,9 +29,9 @@
               <div class = "contents">
     		<div class = "contentsHeader">
 			<div class= "placeName"></div>
-			<div class = "naviIcon">
+			<!--<div class = "naviIcon">
 				<i class="fas fa-route"></i>
-			</div>
+			</div>-->
 		</div>
 		<div class = "contentsInfo">
 			
@@ -79,6 +79,7 @@
 			success : function(t){
 				img = "<img src = '"+t.documents[0].thumbnail_url+"' style = 'width:100%; height:100%;' />";
 				console.log(img);
+				$("#dd").html(img);
 	  		  }
 			
 			
