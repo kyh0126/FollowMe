@@ -56,7 +56,7 @@
   <script>
 	$(document).ready(function(){
 		kakaoimgserch();
-		gserch();
+		anjanj();
 		$("#map").dblclick(function() {
 			location.reload();
 		});
@@ -85,6 +85,22 @@
 			
 		});
 		
+	}
+	function anjanj(){
+		
+		var xhr = new XMLHttpRequest();
+		var url = 'http://apis.data.go.kr/6300000/tourDataService/tourDataListJson'; 
+		var queryParams = '?' + encodeURIComponent('ServiceKey') + '='+'aggV%2F4hQnmywSfVZz7PL6hL%2BNUNEzkEWVPJF2Y%2FSR36XrnSL0Mssjmq01Sa2QXeytohSyi%2FkfW%2BETYj%2BaZ9uRQ%3D%3D';
+
+		xhr.open('GET', url + queryParams);
+		xhr.onreadystatechange = function () {
+			
+			if (this.readyState == 4) {
+				alert('Status: '+this.status+'nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'nBody: '+this.responseText);
+			}
+		};
+		xhr.send('');
+
 	}
 	function gserch(){
 
