@@ -85,13 +85,11 @@
 		
 	}
 	function gserch(){
-		var key = "aggV%2F4hQnmywSfVZz7PL6hL%2BNUNEzkEWVPJF2Y%2FSR36XrnSL0Mssjmq01Sa2QXeytohSyi%2FkfW%2BETYj%2BaZ9uRQ%3D%3D"
-		var data = { "ServiceKey" : key} ;
+
 		$.ajax({
 			type :"GET",
 			dataType : "JSON",
-			url : "http://apis.data.go.kr/6300000/tourDataService/tourDataListJson",
-			data : data,
+			url : "http://apis.data.go.kr/6300000/tourDataService/tourDataListJson?ServiceKey=aggV%2F4hQnmywSfVZz7PL6hL%2BNUNEzkEWVPJF2Y%2FSR36XrnSL0Mssjmq01Sa2QXeytohSyi%2FkfW%2BETYj%2BaZ9uRQ%3D%3D",
 			success : function(t){
 				console.log(t);
 	  		  }
