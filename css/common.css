@@ -19,8 +19,6 @@ a{
     }
 .container::after{clear:both; content:""; display: block;}
 .leftSlide{
-    width:19%; 
-    height:873px;
     position: absolute;
     top: 80px;
     left: 0px;
@@ -29,7 +27,7 @@ a{
 }
 .leftSlide > h2{margin-top: 10px;text-align: center;}
 .left-menu { transition: all 0.25s; } 
-.left-menu-enter-active { transition: all 0.25s ease; width:19%; height:873px;} 
+.left-menu-enter-active { transition: all 0.25s ease;} 
 .left-menu-leave-active { transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1); } 
 .left-menu-enter, .left-menu-leave-active { opacity: 0; transform: translateX(-100%); }
 .contents{
