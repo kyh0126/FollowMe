@@ -10,9 +10,17 @@ a{
 }
 .container{
     position: relative;
+    
 }
-.total::after{clear:both; content:""; display: block;}
+@media (min-width: 1200px){
+        .container{
+            width: 1170px;
+        }
+    }
+.container::after{clear:both; content:""; display: block;}
 .leftSlide{
+    width:19%; 
+    height:873px;
     position: absolute;
     top: 80px;
     left: 0px;
@@ -21,7 +29,7 @@ a{
 }
 .leftSlide > h2{margin-top: 10px;text-align: center;}
 .left-menu { transition: all 0.25s; } 
-.left-menu-enter-active { transition: all 0.25s ease;} 
+.left-menu-enter-active { transition: all 0.25s ease; width:19%; height:873px;} 
 .left-menu-leave-active { transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1); } 
 .left-menu-enter, .left-menu-leave-active { opacity: 0; transform: translateX(-100%); }
 .contents{
@@ -34,6 +42,11 @@ a{
     text-align: center;
     border-right: 1px solid #D5D5D5;
 }
+.introduceMe > h5{
+    margin-left: 25%;
+    margin-top: 100%;
+    text-align: left;
+}
 .introduceMe > p{
     font-size: 20px;
 }
@@ -41,6 +54,7 @@ a{
     font-size: 15px;
 }
 .menuIcon{
+    width: 25px;
     font-size: 25px;
     margin: 5% 12%;
     text-align: left;
