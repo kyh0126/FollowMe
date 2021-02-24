@@ -128,4 +128,10 @@
             {"tourSeq":"963","id":"TL0000791","name":"대청호 자연생태관","recommend":"N","expression":"Y","dCode":"C0101","tGubun":"TL0108","addr1":"대전광역시 동구 천개동로 41","addr2":"대청호자연생태관","zipcode":"300-330","telCode":"042","telKuk":"251","telNo":"4781","imgIdx":"72129","keyword":"대청호 자연생태관","contents2":"대청호의 자연생태와 환경보전의 중요성을 배울 수 있는 생태체험 학습장으로 대청호 주변 자연생태에 관한 교육 영상관과 수몰민들의 향토 유물을 전시한 향토관, 어류,곤충,식물에 관한 자료를 전시한 생태관, 수질보전과 자원재활용의 중용성을 배우는 환경관 그리고 전망대로 구성되어 있음","hitCnt":"12838","dLang":"KO","useYn":"Y","idxImgPath":"FileUpload/BEF/dj2009/incomming/2011/09/26/-105804221.jpg","idxImgName":"생태관전경.jpg"},
             {"tourSeq":"1026","id":"TL0000786","name":"대전어린이회관","recommend":"N","expression":"Y","dCode":"C0103","tGubun":"TL0105","addr1":"유성구 월드컵대로 32","addr2":"월드컵경기장 동관 1층","zipcode":"305-325","telCode":"042","telKuk":"824","telNo":"5500","imgIdx":"72102","keyword":"어린이","hitCnt":"18164","dLang":"KO","useYn":"Y","idxImgPath":"FileUpload/BEF/dj2009/incomming/2011/07/13/-13730857123.jpg","idxImgName":"대전어린이회관안내도.jpg"}
         );
+        var city = $("#city").val();
+        for(var i =0; i<msgbody.length; i++){
+            if(msgbody[i].addr1.indexOf(city) != -1){
+                 console.log(i);
+            }
+        }
  }
