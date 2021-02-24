@@ -8,15 +8,12 @@ a{
     color: black;
     text-decoration: none;
 }
-.container{
+.container-fluid{
+    width:100vw;
+    height:100vh;
     position: relative;
     
 }
-@media (min-width: 1200px){
-        .container{
-            width: 1170px;
-        }
-    }
 .container::after{clear:both; content:""; display: block;}
 .leftSlide{
     position: absolute;
