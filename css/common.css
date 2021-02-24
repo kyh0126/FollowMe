@@ -54,7 +54,7 @@ a{
 .menuIcon{
     width: 25px;
     font-size: 25px;
-    margin: 5% 12%;
+    margin: 10% 10%;
     text-align: left;
     cursor: pointer;
 }
@@ -63,6 +63,8 @@ h2{margin-top:50%}
     float: left;
 }
 #map{
+    width:90%;
+    height:90%;
     margin: 0 auto;
     margin-top: 25px;
     border-radius: 70px;
