@@ -8,6 +8,7 @@
     <link href ="css/common.css" rel = "stylesheet" type = "text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="api.js" type = "text/javascript"></script>
+    <script src="new.js" type = "text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d4910abfb35ac798f0a645afc1a160e1"></script>
@@ -58,7 +59,6 @@
   <script>
 	$(document).ready(function(){
 		kakaoimgserch();
-		gserch();
 		$("#map").dblclick(function() {
 			location.reload();
 		});
@@ -83,28 +83,11 @@
 				img = "<img src = '"+t.documents[0].thumbnail_url+"' style = 'width:100%; height:100%;' />";
 				console.log(img);
 				tag2 = "<li class='top_headli'><img src ='"+t.documents[0].thumbnail_url+"'></li>"; 
-				$("#fds").html(tag2);
+				$("#dd").html(tag2);
 	  		  }
 			
 			
 		});
-		
-	}
-
-	function gserch(){
-
-		var xhr = new XMLHttpRequest();
-		var url = 'http://apis.data.go.kr/6300000/tourDataService/tourDataListJson'; 
-		var queryParams = '?' + encodeURIComponent('ServiceKey') + '='+'aggV%2F4hQnmywSfVZz7PL6hL%2BNUNEzkEWVPJF2Y%2FSR36XrnSL0Mssjmq01Sa2QXeytohSyi%2FkfW%2BETYj%2BaZ9uRQ%3D%3D';
-
-		xhr.open('GET', url + queryParams);
-		xhr.onreadystatechange = function () {
-			
-			if (this.readyState == 4) {
-				alert('Status: '+this.status+'nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'nBody: '+this.responseText);
-			}
-		};
-		xhr.send('');
 		
 	}
     </script>
