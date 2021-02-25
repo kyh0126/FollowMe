@@ -31,7 +31,7 @@ a{
     background-color:black;
 }
 .introduceMe{
-    margin: 14px 0px;
+    margin: 14px 0px !important;
     float: left;
     text-align: center;
     border-right: 1px solid #D5D5D5;
