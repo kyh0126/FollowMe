@@ -18,13 +18,9 @@
     <div class = "container-fluid row">
       <div class = "introduceMe col-md-3">
         <div class = "menuIcon" @click = "show = !show">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars" id = "mainMenuIcon"></i>
         </div>
-        <h2>안녕하세요 !</h2>
-        <h3>나만 따라와</h3>
-	<p><br>대전광역시의 행정구별로<br>여행지를 소개해드립니다 !</p>
-	<p id = "intro">Daejeon Metropolitan City<br>Developer: 김영환</p>
-        <transition name = "left-menu">
+	<transition name = "left-menu">
             <div class = "leftSlide" v-if = "show">
               <h2>추천 장소 !</h2>
               <div class = "contents">
@@ -45,7 +41,13 @@
 	        </div>
               </div>
             </div>
-       </transition>
+        </transition>
+        <div class = "introContents">
+          <h2>안녕하세요 !</h2>
+          <h3>나만 따라와</h3>
+          <p><br>대전광역시의 행정구별로<br>여행지를 소개해드립니다 !</p>
+          <p id = "intro">Daejeon Metropolitan City<br>Web Developer: 김영환</p>
+        </div>
       </div>
       <div class = "clickMap col-md-9">
         <div id="map" class = "col-md-6 col-md-offset-3"></div>
@@ -62,13 +64,17 @@
 		$("#map").dblclick(function() {
 			location.reload();
 		});
+		new Vue({
+			el: '.introduceMe',
+			data:{
+				show: false
+			}
+		});
+		$(".menuIcon").click(function(){
+			$(".introContents").toggle();
+		});
 	});
-	new Vue({
-		el: '.introduceMe',
-		data:{
-			show: false
-		}
-	}); 
+	
 	function kakaoimgserch(){
 		var img = "";
 		var tag2 = "";
