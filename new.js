@@ -145,7 +145,7 @@
         $("#dd").html("");
          check.forEach(function(e){
             
-            var data = { "query" : "대전 "+msgbody[e].name + " 배경사진"} ;
+            var data = { "query" : "대전 "+msgbody[e].name + " 대표사진"} ;
             $.ajax({
                 type :"GET",
                 dataType : "JSON",
