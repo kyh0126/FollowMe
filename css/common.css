@@ -16,9 +16,7 @@ a{
 }
 .container::after{clear:both; content:""; display: block;}
 .leftSlide{
-    position: absolute;
-    top: 80px;
-    left: 0px;
+    width:100%;
     float: left;
     background-color:#DDD;
 }
@@ -49,10 +47,11 @@ a{
     font-size: 15px;
 }
 .menuIcon{
-    width: 25px;
     font-size: 25px;
-    margin: 10% 10%;
+    margin: 10% 85% 10% 10%;
     text-align: left;
+}
+#mainMenuIcon{
     cursor: pointer;
 }
 h2{margin-top:50%}
