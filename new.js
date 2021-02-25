@@ -142,9 +142,9 @@
                 j++;
              }
         }
-        
+        $("#dd").html("");
          check.forEach(function(e){
-            console.log(e);
+            
             var data = { "query" : "대전 "+msgbody[e].name + " 풍경사진"} ;
             $.ajax({
                 type :"GET",
