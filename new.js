@@ -155,8 +155,8 @@
                 data : data,
                 success : function(t){
                     var img = "";
-                    var src = t.documents[0].thumbnail_url;
-                    img += "<li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li>";
+                    //var src = t.documents[0].thumbnail_url;
+                    //img += "<li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li>";
                     img += "<li style = 'color :white;'>"+msgbody[e].name+"</li>";
                     img += "<li style = 'color :white;'>"+msgbody[e].addr1+"</li>";
                     img += "<li style = 'padding:10px;'></li>";
