@@ -508,35 +508,35 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		$("#city").val();
 		$("#city").val("동구");
 		testjson();
-	    	kakaoserch();
+	    	//kakaoserch();
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() { 
 		console.log(event);
 		$("#city").val();
 		$("#city").val("중구");
 		testjson();
-		kakaoserch();
+		//kakaoserch();
 	});   
 	kakao.maps.event.addListener(seoguPolygon, 'mousedown', function() { 
 		console.log(event);
 		$("#city").val();
 		$("#city").val("서구");
 		testjson();
-		kakaoserch();
+		//kakaoserch();
 	});   
 	kakao.maps.event.addListener(yuseongguPolygon, 'mousedown', function() { 
 		console.log(event);
 		$("#city").val();
 		$("#city").val("유성구");
 		testjson();
-		kakaoserch();
+		//kakaoserch();
 	});   
 	kakao.maps.event.addListener(daedeokguPolygon, 'mousedown', function() { 
 		console.log(event);
 		$("#city").val();
 		$("#city").val("대덕구");
 		testjson();
-		kakaoserch();
+		//kakaoserch();
 	});     
 	// 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
 	var linePath1 = [
