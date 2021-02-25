@@ -136,7 +136,7 @@
         }
         var check = new Array();
         var j = 0;
-        for (var i =0 i<msgbody.length; i++){
+        for (var i =0; i<msgbody.length; i++){
              if(msgbody[i].addr1.indexOf(city) != -1){
                 check[j] = i;
                 j++;
