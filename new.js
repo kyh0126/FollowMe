@@ -134,4 +134,33 @@
                  console.log(i);
             }
         }
+        var check = new Array();
+        var j = 0;
+        for (var i =0 i<msgbody.length; i++){
+             if(msgbody[i].addr1.indexOf(city) != -1){
+                check[j] = i;
+                j++;
+             }
+        }
+        
+        check.forEach(function(e){
+           var data = { "query" : "대전 "+msgbody[e].name + " 풍경사진"};
+           $.ajax({
+               type : "get",
+               dataType : "json",
+               headers : {Authorization : "KakaoAk 3d28fa1112d233772d80357459a0af7b"},
+               url : "htpps://dapi.kakao.com/v2/search/image",
+               data : data,
+               success : function(t){
+                   var img = "";
+                   img += "<li><img src '"+t.documents[0].thumbnail_url+"' style = 'width:100%; height:100%;' /></li>";
+                   img += "<li style = 'color : white;'>"+msgbody[e].name+"</li>";
+                   img += "<li style = 'color : white;'>"+msgbody[e].addr1+"</li>";
+                   img += "<li style = 'padding:10px;'><li>";
+                   $("#dd3").append(img);
+               }
+           });
+        });
+  
+  
  }
