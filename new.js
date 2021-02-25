@@ -160,10 +160,10 @@
                     img += "<li style = 'color :white;'>"+msgbody[e].name+"</li>";
                     img += "<li style = 'color :white;'>"+msgbody[e].addr1+"</li>";
                     img += "<li style = 'padding:10px;'></li>";
-                    console.log(img);
-                    $("#dd3").append(img);
+          
+                    
                 }
-                
+                $("#dd3").html(img);
             });
            
        });
