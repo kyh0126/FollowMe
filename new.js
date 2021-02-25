@@ -131,7 +131,7 @@
         var city = $("#city").val();
         for(var i =0; i<msgbody.length; i++){
             if(msgbody[i].addr1.indexOf(city) != -1){
-                 console.log(i);
+                 //console.log(i);
             }
         }
         var check = new Array();
