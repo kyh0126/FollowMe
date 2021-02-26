@@ -513,9 +513,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 			$("#city").val();
 			$("#city").val("동구");
 			if(currentCity == $("#city").val()){
-				$(".introContents").toggle(); 
-				$(".leftSlide").slideUp(1000);
-				return;
+				location.reload();
 			}else{
 				$(".leftSlide").slideDown(1000);
 			}
@@ -532,9 +530,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 			$("#city").val();
 			$("#city").val("중구");
 			if(currentCity == $("#city").val()){
-				$(".leftSlide").slideUp(1000);
-				$(".introContents").toggle();
-				return;
+				location.reload();
 			}else{
 				$(".leftSlide").slideDown(1000);
 			}
