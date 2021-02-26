@@ -506,13 +506,12 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() {
 		var currentCity = $("#city").val();
 		if($("#city").val() == ''){
-			$("#city").val();
 			$("#city").val("동구");
 			$(".leftSlide").slideDown(1000);
 		}else{
 			$("#city").val();
 			$("#city").val("동구");
-			if($("#city").val() == currentCity){
+			if(($("#city").val()).equals(currentCity)){
 				$(".leftSlide").slideUp(1000);
 				return;
 			}else{
@@ -531,7 +530,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		}else{
 			$("#city").val();
 			$("#city").val("중구");
-			if($("#city").val() == currentCity){
+			if(($("#city").val()).equals(currentCity)){
 				$(".leftSlide").slideUp(1000);
 				return;
 			}else{
