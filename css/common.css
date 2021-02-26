@@ -62,6 +62,7 @@ h2{margin-top:50%}
     border-radius: 70px;
 }
 .contents{
+    height:500px
     overflow: scroll;
 }
 .placeImg{
