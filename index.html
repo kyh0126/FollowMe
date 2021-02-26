@@ -17,8 +17,8 @@
   </head>
   <body>
     <div class = "totalDiv container-fluid row">
-		<div class = "clickMap col-md-9">
-			<div id="map" class = "col-md-6 col-md-offset-3" @click = "show = !show"></div>
+		<div class = "clickMap col-md-9" @click = "show = !show">
+			<div id="map" class = "col-md-6 col-md-offset-3" ></div>
 			<script src="js/map.js" type = "text/javascript"></script>
 			<input type ="hidden" id ="city" value = "" />
 		</div>
