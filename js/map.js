@@ -505,7 +505,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	// 다각형에 마우스다운 이벤트를 등록합니다
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() { 
 		$( ".left-menu" ).animate({ 
-			"right": "+=50px" 
+			"right": "-=50px" 
 		}, 500);
 		$(".introContents").toggle();
 		$("#city").val();
