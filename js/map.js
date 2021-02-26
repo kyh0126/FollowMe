@@ -519,7 +519,6 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				$(".leftSlide").slideDown(1000);
 			}
 		}
-		$(".introContents").toggle(); 
 		testjson();
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() {
@@ -538,7 +537,6 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				$(".leftSlide").slideDown(1000);
 			}
 		}
-		$(".introContents").toggle();
 		testjson();
 	});   
 	kakao.maps.event.addListener(seoguPolygon, 'mousedown', function() { 
