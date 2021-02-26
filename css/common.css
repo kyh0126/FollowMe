@@ -34,6 +34,7 @@ a{
     float: right;
     text-align: center;
     border-left: 1px solid #D5D5D5;
+    position: relative;
 }
 .introduceMe > p{
     font-size: 20px;
