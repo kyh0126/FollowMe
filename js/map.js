@@ -504,10 +504,15 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	daedeokguPolygon.setMap(map);  
 	// 다각형에 마우스다운 이벤트를 등록합니다 
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() {
-		$(".leftSlide").slideToggle(1000);
-		$(".introContents").toggle(); 
+		var currentCity = "#city";
 		$("#city").val();
 		$("#city").val("동구");
+		if(("#city").val() == currentCity){
+			$(".leftSlide").slideDown(1000);
+		}else{
+			$(".leftSlide").slideUp(1000);
+		}
+		$(".introContents").toggle(); 
 		testjson();
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() {
