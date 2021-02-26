@@ -17,6 +17,7 @@ a{
 .container::after{clear:both; content:""; display: block;}
 .leftSlide{
     width:100%;
+    overflow: hidden;
     float: left;
 }
 .leftSlide > h2{margin-top: 10px;text-align: center;}

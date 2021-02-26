@@ -504,12 +504,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	daedeokguPolygon.setMap(map);  
 	// 다각형에 마우스다운 이벤트를 등록합니다
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() { 
-		var SlideInterval = 1000;
-		if($(".leftSlide").css("display")=="none"){ 
-			$(".leftSlide").slideLeft(SlideInterval); 
-			}else{ 
-			$(".leftSlide").slideRight(SlideInterval); 
-		 }
+		$( ".left-menu" ).animate({ 
+			"right": "+=50px" 
+		}, 500);
 		$(".introContents").toggle();
 		$("#city").val();
 		$("#city").val("동구");
@@ -518,9 +515,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() {
 		var SlideInterval = 1000;
 		if($(".leftSlide").css("display")=="none"){ 
-			$(".leftSlide").slideLeft(SlideInterval); 
-			}else{ 
 			$(".leftSlide").slideRight(SlideInterval); 
+			}else{ 
+			$(".leftSlide").slideLeft(SlideInterval); 
 		} 
 		$(".introContents").toggle();
 		$("#city").val();
@@ -530,9 +527,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	kakao.maps.event.addListener(seoguPolygon, 'mousedown', function() { 
 		var SlideInterval = 1000;
 		if($(".leftSlide").css("display")=="none"){ 
-			$(".leftSlide").slideLeft(SlideInterval); 
-			}else{ 
 			$(".leftSlide").slideRight(SlideInterval); 
+			}else{ 
+			$(".leftSlide").slideLeft(SlideInterval); 
 		}
 		$(".introContents").toggle();
 		$("#city").val();
@@ -542,9 +539,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	kakao.maps.event.addListener(yuseongguPolygon, 'mousedown', function() { 
 		var SlideInterval = 1000;
 		if($(".leftSlide").css("display")=="none"){ 
-			$(".leftSlide").slideLeft(SlideInterval); 
-			}else{ 
 			$(".leftSlide").slideRight(SlideInterval); 
+			}else{ 
+			$(".leftSlide").slideLeft(SlideInterval); 
 		}
 		$(".introContents").toggle();
 		$("#city").val();
@@ -554,9 +551,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	kakao.maps.event.addListener(daedeokguPolygon, 'mousedown', function() { 
 		var SlideInterval = 1000;
 		if($(".leftSlide").css("display")=="none"){ 
-			$(".leftSlide").slideLeft(SlideInterval); 
-			}else{ 
 			$(".leftSlide").slideRight(SlideInterval); 
+			}else{ 
+			$(".leftSlide").slideLeft(SlideInterval); 
 		}
 		$(".introContents").toggle();
 		$("#city").val();
