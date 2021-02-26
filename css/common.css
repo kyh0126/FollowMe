@@ -21,10 +21,6 @@ a{
     float: left;
 }
 .leftSlide > h2{margin-top: 10px;text-align: center;}
-.left-menu { transition: all 0.25s; } 
-.left-menu-enter-active { transition: all 0.25s ease;} 
-.left-menu-leave-active { transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1); } 
-.left-menu-enter, .left-menu-leave-active { opacity: 0; transform: translateX(100%); }
 .contents{
     margin: 5%;
     background-color:black;
