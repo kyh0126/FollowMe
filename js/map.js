@@ -503,8 +503,8 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	yuseongguPolygon.setMap(map);
 	daedeokguPolygon.setMap(map);  
 	// 다각형에 마우스다운 이벤트를 등록합니다 
+	var lastCity = "#city";
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() {
-		var lastCity = "#city";
 		$("#city").val();
 		$("#city").val("동구");
 		var currentCity = "#city";
