@@ -513,48 +513,36 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		testjson();
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() {
-		var SlideInterval = 1000;
-		if($(".leftSlide").css("display")=="none"){ 
-			$(".leftSlide").slideRight(SlideInterval); 
-			}else{ 
-			$(".leftSlide").slideLeft(SlideInterval); 
-		} 
+		$( ".left-menu" ).animate({ 
+			"right": "+=50px" 
+		}, 500);
 		$(".introContents").toggle();
 		$("#city").val();
 		$("#city").val("중구");
 		testjson();
 	});   
 	kakao.maps.event.addListener(seoguPolygon, 'mousedown', function() { 
-		var SlideInterval = 1000;
-		if($(".leftSlide").css("display")=="none"){ 
-			$(".leftSlide").slideRight(SlideInterval); 
-			}else{ 
-			$(".leftSlide").slideLeft(SlideInterval); 
-		}
+		$( ".left-menu" ).animate({ 
+			"right": "+=50px" 
+		}, 500);
 		$(".introContents").toggle();
 		$("#city").val();
 		$("#city").val("서구");
 		testjson();
 	});   
 	kakao.maps.event.addListener(yuseongguPolygon, 'mousedown', function() { 
-		var SlideInterval = 1000;
-		if($(".leftSlide").css("display")=="none"){ 
-			$(".leftSlide").slideRight(SlideInterval); 
-			}else{ 
-			$(".leftSlide").slideLeft(SlideInterval); 
-		}
+		$( ".left-menu" ).animate({ 
+			"right": "+=50px" 
+		}, 500);
 		$(".introContents").toggle();
 		$("#city").val();
 		$("#city").val("유성구");
 		testjson();
 	});   
 	kakao.maps.event.addListener(daedeokguPolygon, 'mousedown', function() { 
-		var SlideInterval = 1000;
-		if($(".leftSlide").css("display")=="none"){ 
-			$(".leftSlide").slideRight(SlideInterval); 
-			}else{ 
-			$(".leftSlide").slideLeft(SlideInterval); 
-		}
+		$( ".left-menu" ).animate({ 
+			"right": "+=50px" 
+		}, 500);
 		$(".introContents").toggle();
 		$("#city").val();
 		$("#city").val("대덕구");
