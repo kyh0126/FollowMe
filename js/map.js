@@ -504,35 +504,35 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	daedeokguPolygon.setMap(map);  
 	// 다각형에 마우스다운 이벤트를 등록합니다 
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() {
-		$("left-menu").animate({"right": "+=50px"});
+		$("left-menu").slideToggle(1000);
 		$(".introContents").toggle(); 
 		$("#city").val();
 		$("#city").val("동구");
 		testjson();
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() {
-		$("left-menu").animate({"right": "+=50px"});
+		$("left-menu").slideToggle(1000);
 		$(".introContents").toggle();
 		$("#city").val();
 		$("#city").val("중구");
 		testjson();
 	});   
 	kakao.maps.event.addListener(seoguPolygon, 'mousedown', function() { 
-		$("left-menu").animate({"right": "+=50px"});
+		$("left-menu").slideToggle(1000);
 		$(".introContents").toggle();
 		$("#city").val();
 		$("#city").val("서구");
 		testjson();
 	});   
 	kakao.maps.event.addListener(yuseongguPolygon, 'mousedown', function() {
-		$("left-menu").animate({"right": "+=50px"});
+		$("left-menu").slideToggle(1000);
 		$(".introContents").toggle(); 
 		$("#city").val();
 		$("#city").val("유성구");
 		testjson();
 	});   
 	kakao.maps.event.addListener(daedeokguPolygon, 'mousedown', function() {
-		$("left-menu").animate({"right": "+=50px"});
+		$("left-menu").slideToggle(1000);
 		$(".introContents").toggle(); 
 		$("#city").val();
 		$("#city").val("대덕구");

@@ -23,9 +23,6 @@
 			<input type ="hidden" id ="city" value = "" />
 		</div>
 		<div class = "introduceMe col-md-3">
-			<div class = "menuIcon">
-			  <i class="fas fa-bars" id = "mainMenuIcon"></i>
-			</div>
 			<transition name = "left-menu">
 				<div class = "leftSlide">
 				  <h2>추천 장소 !</h2>
@@ -60,10 +57,6 @@
 		//kakaoimgserch();
 		$("#map").dblclick(function() {
 			location.reload();
-		});
-		$(".menuIcon").click(function(){
-			$(".introContents").toggle();
-			$("left-menu").animate({left: "0px"});
 		});
 	});
     </script>
