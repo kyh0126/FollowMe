@@ -516,10 +516,16 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		testjson();
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() {
-		$(".leftSlide").slideToggle(1000);
-		$(".introContents").toggle();
+		var currentCity = "#city";
 		$("#city").val();
 		$("#city").val("중구");
+		if(("#city").val() == currentCity){
+			$(".leftSlide").slideDown(1000);
+		}else{
+			$(".leftSlide").slideUp(1000);
+		}
+		$(".leftSlide").slideToggle(1000);
+		$(".introContents").toggle();
 		testjson();
 	});   
 	kakao.maps.event.addListener(seoguPolygon, 'mousedown', function() { 
