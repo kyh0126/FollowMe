@@ -508,14 +508,14 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		if($("#city").val() == ''){
 			$("#city").val("동구");
 			$(".introContents").toggle();
-			$(".leftSlide").slideDown(1000);
+			$(".rightSlide").slideDown(1000);
 		}else{
 			$("#city").val();
 			$("#city").val("동구");
 			if(currentCity == $("#city").val()){
 				location.reload();
 			}else{
-				$(".leftSlide").slideDown(1000);
+				$(".rightSlide").slideDown(1000);
 			}
 		}
 		testjson();
@@ -525,14 +525,14 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		if($("#city").val() == ''){
 			$("#city").val("중구");
 			$(".introContents").toggle();
-			$(".leftSlide").slideDown(1000);
+			$(".rightSlide").slideDown(1000);
 		}else{
 			$("#city").val();
 			$("#city").val("중구");
 			if(currentCity == $("#city").val()){
 				location.reload();
 			}else{
-				$(".leftSlide").slideDown(1000);
+				$(".rightSlide").slideDown(1000);
 			}
 		}
 		testjson();
@@ -542,14 +542,14 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		if($("#city").val() == ''){
 			$("#city").val("서구");
 			$(".introContents").toggle();
-			$(".leftSlide").slideDown(1000);
+			$(".rightSlide").slideDown(1000);
 		}else{
 			$("#city").val();
 			$("#city").val("서구");
 			if(currentCity == $("#city").val()){
 				location.reload();
 			}else{
-				$(".leftSlide").slideDown(1000);
+				$(".rightSlide").slideDown(1000);
 			}
 		}
 		testjson();
@@ -559,14 +559,14 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		if($("#city").val() == ''){
 			$("#city").val("유성구");
 			$(".introContents").toggle();
-			$(".leftSlide").slideDown(1000);
+			$(".rightSlide").slideDown(1000);
 		}else{
 			$("#city").val();
 			$("#city").val("유성구");
 			if(currentCity == $("#city").val()){
 				location.reload();
 			}else{
-				$(".leftSlide").slideDown(1000);
+				$(".rightSlide").slideDown(1000);
 			}
 		}
 		testjson();
@@ -576,14 +576,14 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		if($("#city").val() == ''){
 			$("#city").val("대덕구");
 			$(".introContents").toggle();
-			$(".leftSlide").slideDown(1000);
+			$(".rightSlide").slideDown(1000);
 		}else{
 			$("#city").val();
 			$("#city").val("대덕구");
 			if(currentCity == $("#city").val()){
 				location.reload();
 			}else{
-				$(".leftSlide").slideDown(1000);
+				$(".rightSlide").slideDown(1000);
 			}
 		}
 		testjson();
