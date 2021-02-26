@@ -508,9 +508,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		$("#city").val();
 		$("#city").val("동구");
 		if(("#city").val() == currentCity){
-			$(".leftSlide").slideDown(1000);
-		}else{
 			$(".leftSlide").slideUp(1000);
+		}else{
+			$(".leftSlide").slideDown(1000);
 		}
 		$(".introContents").toggle(); 
 		testjson();
@@ -520,9 +520,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		$("#city").val();
 		$("#city").val("중구");
 		if(("#city").val() == currentCity){
-			$(".leftSlide").slideDown(1000);
-		}else{
 			$(".leftSlide").slideUp(1000);
+		}else{
+			$(".leftSlide").slideDown(1000);
 		}
 		$(".leftSlide").slideToggle(1000);
 		$(".introContents").toggle();
