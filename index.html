@@ -16,7 +16,7 @@
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   </head>
   <body>
-    <div class = "total container-fluid row">
+    <div class = "container-fluid row">
 		<div class = "clickMap col-md-9">
 			<div id="map" class = "col-md-6 col-md-offset-3" @click = "show = !show"></div>
 			<script src="js/map.js" type = "text/javascript"></script>
@@ -55,7 +55,6 @@
 		  </div>
     </div>
   </body>
-	<div id ="dd" style = "width:150px;" ></div>
   <script>
 	$(document).ready(function(){
 		//kakaoimgserch();
@@ -63,7 +62,7 @@
 			location.reload();
 		});
 		new Vue({
-			el: '.total',
+			el: '.introduceMe',
 			data:{
 				show: false
 			}
