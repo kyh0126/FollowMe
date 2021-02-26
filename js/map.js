@@ -538,24 +538,54 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		testjson();
 	});   
 	kakao.maps.event.addListener(seoguPolygon, 'mousedown', function() { 
-		$(".leftSlide").slideToggle(1000);
-		$(".introContents").toggle();
-		$("#city").val();
-		$("#city").val("서구");
+		var currentCity = $("#city").val();
+		if($("#city").val() == ''){
+			$("#city").val("서구");
+			$(".introContents").toggle();
+			$(".leftSlide").slideDown(1000);
+		}else{
+			$("#city").val();
+			$("#city").val("서구");
+			if(currentCity == $("#city").val()){
+				location.reload();
+			}else{
+				$(".leftSlide").slideDown(1000);
+			}
+		}
 		testjson();
 	});   
 	kakao.maps.event.addListener(yuseongguPolygon, 'mousedown', function() {
-		$(".leftSlide").slideToggle(1000);
-		$(".introContents").toggle(); 
-		$("#city").val();
-		$("#city").val("유성구");
+		var currentCity = $("#city").val();
+		if($("#city").val() == ''){
+			$("#city").val("유성구");
+			$(".introContents").toggle();
+			$(".leftSlide").slideDown(1000);
+		}else{
+			$("#city").val();
+			$("#city").val("유성구");
+			if(currentCity == $("#city").val()){
+				location.reload();
+			}else{
+				$(".leftSlide").slideDown(1000);
+			}
+		}
 		testjson();
 	});   
 	kakao.maps.event.addListener(daedeokguPolygon, 'mousedown', function() {
-		$(".leftSlide").slideToggle(1000);
-		$(".introContents").toggle(); 
-		$("#city").val();
-		$("#city").val("대덕구");
+		var currentCity = $("#city").val();
+		if($("#city").val() == ''){
+			$("#city").val("대덕구");
+			$(".introContents").toggle();
+			$(".leftSlide").slideDown(1000);
+		}else{
+			$("#city").val();
+			$("#city").val("대덕구");
+			if(currentCity == $("#city").val()){
+				location.reload();
+			}else{
+				$(".leftSlide").slideDown(1000);
+			}
+		}
 		testjson();
 	});     
 	// 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
