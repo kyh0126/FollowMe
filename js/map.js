@@ -505,25 +505,38 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	// 다각형에 마우스다운 이벤트를 등록합니다 
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() {
 		var currentCity = $("#city").val();
-		$("#city").val();
-		$("#city").val("동구");
-		if($("#city").val() == currentCity){
-			$(".leftSlide").slideUp(1000);
-		}else{
+		if($("#city").val() == ''){
+			$("#city").val();
+			$("#city").val("동구");
 			$(".leftSlide").slideDown(1000);
+		}else{
+			$("#city").val();
+			$("#city").val("동구");
+			if($("#city").val() == currentCity){
+				$(".leftSlide").slideUp(1000);
+			}else{
+				$(".leftSlide").slideDown(1000);
+			}
 		}
 		$(".introContents").toggle(); 
 		testjson();
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() {
 		var currentCity = $("#city").val();
-		$("#city").val();
-		$("#city").val("중구");
-		if($("#city").val() == currentCity){
-			$(".leftSlide").slideUp(1000);
-		}else{
+		if($("#city").val() == ''){
+			$("#city").val();
+			$("#city").val("중구");
 			$(".leftSlide").slideDown(1000);
+		}else{
+			$("#city").val();
+			$("#city").val("중구");
+			if($("#city").val() == currentCity){
+				$(".leftSlide").slideUp(1000);
+			}else{
+				$(".leftSlide").slideDown(1000);
+			}
 		}
+		
 		$(".leftSlide").slideToggle(1000);
 		$(".introContents").toggle();
 		testjson();
