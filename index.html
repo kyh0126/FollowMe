@@ -16,16 +16,13 @@
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   </head>
   <body>
-    <div class = "container-fluid row">
+    <div class = "totalDiv container-fluid row">
 		<div class = "clickMap col-md-9">
 			<div id="map" class = "col-md-6 col-md-offset-3" @click = "show = !show"></div>
 			<script src="js/map.js" type = "text/javascript"></script>
 			<input type ="hidden" id ="city" value = "" />
 		</div>
 		<div class = "introduceMe col-md-3">
-			<div class = "menuIcon" @click = "show = !show">
-			  <i class="fas fa-bars" id = "mainMenuIcon"></i>
-			</div>
 			<transition name = "left-menu">
 				<div class = "leftSlide" v-if = "show">
 				  <h2>추천 장소 !</h2>
@@ -57,18 +54,17 @@
   </body>
   <script>
 	$(document).ready(function(){
-		//kakaoimgserch();
+		$("#map").click(function(){
+			$(".introContents").toggle();
+		});
 		$("#map").dblclick(function() {
 			location.reload();
 		});
 		new Vue({
-			el: '.introduceMe',
+			el: '.totalDiv',
 			data:{
 				show: false
 			}
-		});
-		$(".menuIcon").click(function(){
-			$(".introContents").toggle();
 		});
 	});
     </script>
