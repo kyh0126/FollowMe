@@ -518,7 +518,6 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		testjson();
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() {
-		var lastCity = "#city";
 		$("#city").val();
 		$("#city").val("중구");
 		var currentCity = "#city";
