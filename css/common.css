@@ -55,11 +55,16 @@ h2{margin-top:50%}
     margin: 5%;
     overflow: scroll;
 }
+.conTotal::after{clear:both; content:""; display: block;}
 .placeImg{
     width: 50%;
+    float:left;
 }
 .placeImg > li > img{
     max-width: 130px;
     max-height: 130px;
     border-radius: 20%;
+}
+.linkIcon{
+    float:left;
 }
