@@ -148,17 +148,12 @@
                 url : "https://dapi.kakao.com/v2/search/image",
                 data : data,
                 success : function(t){
-                    var img = "";
-                    var DName = "";
-                    var DAddr = "";
+                    var recommendPlace = "";
+
                     var src = t.documents[0].thumbnail_url;
-                    img += "<li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li>";
-                    DName += "<li style = 'color :black;'>"+msgbody[e].name+"</li>";
-                    DAddr += "<li style = 'color :black;'>"+msgbody[e].addr1+"</li>";
-          
-                    $("#placeImg").append(img);
-                    $("#placeName").append(DName);
-                    $("#contentsAddr").append(img);
+                    recommendPlace += "<div class='contentsHeader'><div class='placeName'><li style='color :black;'>"+msgbody[e].name+"</li></div><div class = 'contentsAddr'><li style = 'color :black;'>"+msgbody[e].addr1+"</li></div></div><div class ='placeImg'><li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li></div><div class='linkIcon'><div class = 'naviIcon'><i class='fas fa-route'></i></div><div class = 'instaIcon'><i class='fab fa-instagram'></i></div></div>";
+
+                    $("#contents").append(recommendPlace);
                 }
                 
             });

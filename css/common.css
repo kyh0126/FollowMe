@@ -22,13 +22,6 @@ a{
     display: none;
 }
 .rightSlide > h2{margin-top: 10px;text-align: center;}
-.contents{
-    margin: 5%;
-}
-.placeImg{
-    border: 2px double gray;
-    border-radius: 20%;
-}
 .introduceMe{
     margin: 14px 0px !important;
     float: right;
@@ -46,14 +39,6 @@ a{
     margin-top:100%;
     font-size: 15px;
 }
-.menuIcon{
-    font-size: 25px;
-    margin: 10% 85% 10% 10%;
-    text-align: left;
-}
-#mainMenuIcon{
-    cursor: pointer;
-}
 h2{margin-top:50%}
 .clickMap{
     float: right;
@@ -67,8 +52,11 @@ h2{margin-top:50%}
 }
 .contents{
     height:500px;
+    margin: 5%;
     overflow: scroll;
 }
 .placeImg{
     width: 50%;
+    border: 2px double gray;
+    border-radius: 20%;
 }
