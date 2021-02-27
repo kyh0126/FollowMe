@@ -21,6 +21,7 @@ a{
     float: left;
     display: none;
 }
+.rightSlide::after{clear:both; content:""; display: block;}
 .rightSlide > h2{margin-top: 10px;text-align: center;}
 .introduceMe{
     margin: 14px 0px !important;
