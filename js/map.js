@@ -835,5 +835,3 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	map.setDraggable(false);		
 	// 마우스 휠과 모바일 터치를 이용한 지도 확대, 축소를 막는다
 	map.setZoomable(false);
-
-	var isDisabled = false;

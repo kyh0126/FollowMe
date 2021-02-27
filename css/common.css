@@ -17,13 +17,17 @@ a{
 .container::after{clear:both; content:""; display: block;}
 .rightSlide{
     width:100%;
+    margin-top: 25%;
     float: left;
     display: none;
 }
 .rightSlide > h2{margin-top: 10px;text-align: center;}
 .contents{
     margin: 5%;
-    background-color:black;
+}
+.placeImg{
+    border: 2px double gray;
+    border-radius: 20%;
 }
 .introduceMe{
     margin: 14px 0px !important;

@@ -157,6 +157,8 @@
                     DAddr += "<li style = 'color :black;'>"+msgbody[e].addr1+"</li>";
           
                     $("#placeImg").append(img);
+                    $("#placeName").append(DName);
+                    $("#contentsAddr").append(img);
                 }
                 
             });
