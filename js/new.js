@@ -151,7 +151,7 @@
                     var recommendPlace = "";
 
                     var src = t.documents[0].thumbnail_url;
-                    recommendPlace += "<div class= 'conTotal'><div class='contentsHeader'><div class='placeName'><li style='color :black;'>"+msgbody[e].name+"</li></div><div class = 'contentsAddr'><li style = 'color :black;'>"+msgbody[e].addr1+"</li></div></div><div class ='placeImg'><li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li></div><div class='linkIcon'><div class = 'naviIcon'><i class='fas fa-route'></i></div><div class = 'instaIcon'><i class='fab fa-instagram'></i></div></div></div>";
+                    recommendPlace += "<div class= 'conTotal'><div class='contentsHeader'><div class='placeName'><li style='color :black;'>"+msgbody[e].name+"</li></div><div class = 'contentsAddr'><li style = 'color :black;'>"+msgbody[e].addr1+"</li></div></div><div class ='placeImg'><li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li></div><div class='linkIcon'><li class = 'naviIcon'><i class='fas fa-route'></i></li><li class = 'instaIcon'><i class='fab fa-instagram'></i></li></div></div>";
 
                     $("#contents").append(recommendPlace);
                 }
