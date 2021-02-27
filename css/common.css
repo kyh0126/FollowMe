@@ -57,6 +57,9 @@ h2{margin-top:50%}
 }
 .placeImg{
     width: 50%;
-    border: 2px double gray;
+}
+.placeImg > li > img{
+    max-width: 130px;
+    max-height: 130px;
     border-radius: 20%;
 }
