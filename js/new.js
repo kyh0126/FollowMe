@@ -163,7 +163,7 @@
                             var recommendPlace = "";
         
                             var src = t.documents[0].thumbnail_url;
-                            recommendPlace += "<div class= 'conTotal'><div class='contentsHeader'><div class='placeName'><li style='color :black;'>"+msgbody[e].name+"</li></div><div class = 'contentsAddr'><li style = 'color :black;'>"+msgbody[e].addr1+"</li></div></div><div class ='placeImg'><li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li></div><div class='linkIcon'><li class = 'naviIcon'><a href='http://map.daum.net/link/to/"+msgbody[e].name+ yCo+","+xCo+"'><i class='fas fa-route'></i></a></li><li class = 'instaIcon'><a href='https://www.instagram.com/explore/tags/"+msgbody[e].name+"/'><i class='fab fa-instagram'></i></a></li></div></div>";
+                            recommendPlace += "<div class= 'conTotal'><div class='contentsHeader'><div class='placeName'><li style='color :black;'>"+msgbody[e].name+"</li></div><div class = 'contentsAddr'><li style = 'color :black;'>"+msgbody[e].addr1+"</li></div></div><div class ='placeImg'><li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li></div><div class='linkIcon'><li class = 'naviIcon'><a href='http://map.daum.net/link/to/"+msgbody[e].addr1+ yCo+","+xCo+"'><i class='fas fa-route'></i></a></li><li class = 'instaIcon'><a href='https://www.instagram.com/explore/tags/"+msgbody[e].name+"/'><i class='fab fa-instagram'></i></a></li></div></div>";
         
                             $("#contents").append(recommendPlace);
                         }
