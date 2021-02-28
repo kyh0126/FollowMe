@@ -76,8 +76,8 @@ h2{margin-top:50%}
     float:left;
     font-size: 300%;
 }
-.linkIcon > li > i{
-    border: 1px solid black;
+.linkIcon > li > a > i{
+    border: 1px solid gray;
     padding: 5px;
     border-radius: 40%;
 }
