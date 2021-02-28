@@ -136,7 +136,7 @@
                 j++;
              }
         }
-        $("#placeImg").html("");
+        $("#contents").html("");
          check.forEach(function(e){
             
             var data2 = { "query" : "대전 "+msgbody[e].name + " 관광사진"};
