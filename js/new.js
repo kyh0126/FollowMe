@@ -1,4 +1,4 @@
- function testjson(){
+ function DaejeonPlace(){
         var msgbody = new Array(
             {"tourSeq":"1342","id":"TL0001032","name":"특허청 발명인의 전당","recommend":"N","expression":"Y","dCode":"C0103","tGubun":"TL0107","addr1":"대전광역시 서구 청사로 189","addr2":"(둔산동)정부대전청사 4동 1층","zipcode":"35208","telCode":"042","telKuk":"481","telNo":"5940","imgIdx":"77583","keyword":"특허청 발명인의 전당","contents2":"박물관(미술관, 기념관) 전시관 구성\r\n1. 특허청 소개 - 산업재산권 제도 설명 및 관련 자료를 통해 특허행정에 대한 이해를 돕는 공간\r\n2. 발명의 역사 - 우리나라 발명의 역사와 세계적인 우수 발명품을 볼 수 있는 공간\r\n3. 발명가 명예의 전당 - 우리나라 역대 위대한 창조인 7인과 발명품을 통해 업적과 명예를 기리기 위한 공간\r\n4. 발명을 만나다 - 삼국, 고려, 조선시대의 대표 발명품과 국민의 생활을 편리하고 윤택하게 만들어준 국산품 1호 제품을 전시한 공간\r\n5. 우리시대 발명왕 - 발명의 날에 선정되는 올해의 발명왕들의 공적과 발명품을 전시한 공간","hitCnt":"444","dLang":"KO","useYn":"Y","idxImgPath":"FileUpload/TOU/201909/20190917024039130.jpeg","idxImgName":"7A63DFF0-12FD-4A14-8331-0D94A941FE0F.jpeg"},
             {"tourSeq":"1340","id":"TL0001013","name":"대전문학관","recommend":"N","expression":"Y","dCode":"C0103","tGubun":"TL0105","lGubun":"TL0208","addr1":"대전광역시 동구 송촌남로11번길 116","addr2":"(용전동)","zipcode":"34539","telCode":"042","telKuk":"626","telNo":"5021","imgIdx":"75903","keyword":"문학관","contents2":"대전문학관은 대전의 문학사를 정립하여 그 전통을 계승하며, 문인들의 작품과 문학 사료를 체계적으로 보존·관리하는 곳입니다.\r\n\r\n대전시민의 품격 있는 문학생활 향유를 위해 특색 있는 문학 콘텐츠를 개발하고 전시 및 문학교육 프로그램, 시 확산 시민운동, \r\n문학콘서트 등 다양한 사업 추진을 통해 대전을 문학으로 꿈꾸는 도시로 만들어가고 있습니다.","hitCnt":"3289","dLang":"KO","useYn":"Y","idxImgPath":"FileUpload/TOU/201701/20170119103019350.jpg","idxImgName":"201603041306395660.jpg"},
@@ -139,24 +139,40 @@
         $("#placeImg").html("");
          check.forEach(function(e){
             
-            var data = { "query" : "대전 "+msgbody[e].name + " 관광사진"} ;
+            var data2 = { "query" : "대전 "+msgbody[e].name + " 관광사진"};
+            var data1 = { "query" : msgbody[e].addr1 };
             $.ajax({
                 type :"GET",
                 dataType : "JSON",
                 async : false,
                 headers : {Authorization : "KakaoAK 04881251da5eef1bfac8e06705918a6d"},
-                url : "https://dapi.kakao.com/v2/search/image",
-                data : data,
+                url : "https://dapi.kakao.com/v2/local/search/address.json",
+                data : data1,
                 success : function(t){
-                    var recommendPlace = "";
+                    var xCo = t.documents[0].x;
+                    var yCo = t.documents[0].y;
 
-                    var src = t.documents[0].thumbnail_url;
-                    recommendPlace += "<div class= 'conTotal'><div class='contentsHeader'><div class='placeName'><li style='color :black;'>"+msgbody[e].name+"</li></div><div class = 'contentsAddr'><li style = 'color :black;'>"+msgbody[e].addr1+"</li></div></div><div class ='placeImg'><li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li></div><div class='linkIcon'><li class = 'naviIcon'><i class='fas fa-route'></i></li><li class = 'instaIcon'><i class='fab fa-instagram'></i></li></div></div>";
-
-                    $("#contents").append(recommendPlace);
+                    $.ajax({
+                        type :"GET",
+                        dataType : "JSON",
+                        async : false,
+                        headers : {Authorization : "KakaoAK 04881251da5eef1bfac8e06705918a6d"},
+                        url : "https://dapi.kakao.com/v2/search/image",
+                        data : data2,
+                        success : function(t){
+                            var recommendPlace = "";
+        
+                            var src = t.documents[0].thumbnail_url;
+                            recommendPlace += "<div class= 'conTotal'><div class='contentsHeader'><div class='placeName'><li style='color :black;'>"+msgbody[e].name+"</li></div><div class = 'contentsAddr'><li style = 'color :black;'>"+msgbody[e].addr1+"</li></div></div><div class ='placeImg'><li><img src = '"+ src +"' style = 'width:100%; height:100%;' /></li></div><div class='linkIcon'><li class = 'naviIcon'><a href='http://map.daum.net/link/to/"+msgbody[e].name+ xCo+","+yCo+"'><i class='fas fa-route'></i></a></li><li class = 'instaIcon'><a href='https://www.instagram.com/explore/tags/"+msgbody[e].name+"/'><i class='fab fa-instagram'></i></a></li></div></div>";
+        
+                            $("#contents").append(recommendPlace);
+                        }
+                        
+                    });    
                 }
                 
             });
+            
            
        });
   

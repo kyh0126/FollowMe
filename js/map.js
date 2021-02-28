@@ -518,7 +518,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				$(".rightSlide").slideDown(1000);
 			}
 		}
-		testjson();
+		DaejeonPlace();
 	});   
 	kakao.maps.event.addListener(jungguPolygon, 'mousedown', function() {
 		var currentCity = $("#city").val();
@@ -535,7 +535,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				$(".rightSlide").slideDown(1000);
 			}
 		}
-		testjson();
+		DaejeonPlace();
 	});   
 	kakao.maps.event.addListener(seoguPolygon, 'mousedown', function() { 
 		var currentCity = $("#city").val();
@@ -552,7 +552,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				$(".rightSlide").slideDown(1000);
 			}
 		}
-		testjson();
+		DaejeonPlace();
 	});   
 	kakao.maps.event.addListener(yuseongguPolygon, 'mousedown', function() {
 		var currentCity = $("#city").val();
@@ -569,7 +569,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				$(".rightSlide").slideDown(1000);
 			}
 		}
-		testjson();
+		DaejeonPlace();
 	});   
 	kakao.maps.event.addListener(daedeokguPolygon, 'mousedown', function() {
 		var currentCity = $("#city").val();
@@ -586,7 +586,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				$(".rightSlide").slideDown(1000);
 			}
 		}
-		testjson();
+		DaejeonPlace();
 	});     
 	// 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
 	var linePath1 = [
@@ -612,7 +612,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	// 지도에 표시할 선을 생성합니다
 	var polyline1 = new kakao.maps.Polyline({
 		path: linePath1, // 선을 구성하는 좌표배열 입니다
-		strokeWeight: 2, // 선의 두께 입니다
+		strokeWeight: 4, // 선의 두께 입니다
 		strokeColor: '#5D5D5D', // 선의 색깔입니다
 		strokeOpacity: 0.8, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
 		strokeStyle: 'solid' // 선의 스타일입니다
@@ -632,7 +632,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	// 지도에 표시할 선을 생성합니다
 	var polyline2 = new kakao.maps.Polyline({
 		path: linePath2, // 선을 구성하는 좌표배열 입니다
-		strokeWeight: 2, // 선의 두께 입니다
+		strokeWeight: 4, // 선의 두께 입니다
 		strokeColor: '#5D5D5D', // 선의 색깔입니다
 		strokeOpacity: 0.8, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
 		strokeStyle: 'solid' // 선의 스타일입니다
@@ -650,7 +650,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	// 지도에 표시할 선을 생성합니다
 	var polyline3 = new kakao.maps.Polyline({
 		path: linePath3, // 선을 구성하는 좌표배열 입니다
-		strokeWeight: 2, // 선의 두께 입니다
+		strokeWeight: 4, // 선의 두께 입니다
 		strokeColor: '#5D5D5D', // 선의 색깔입니다
 		strokeOpacity: 0.8, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
 		strokeStyle: 'solid' // 선의 스타일입니다
@@ -668,7 +668,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	// 지도에 표시할 선을 생성합니다
 	var polyline4 = new kakao.maps.Polyline({
 		path: linePath4, // 선을 구성하는 좌표배열 입니다
-		strokeWeight: 2, // 선의 두께 입니다
+		strokeWeight: 4, // 선의 두께 입니다
 		strokeColor: '#5D5D5D', // 선의 색깔입니다
 		strokeOpacity: 0.8, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
 		strokeStyle: 'solid' // 선의 스타일입니다
