@@ -83,12 +83,12 @@ h2{margin-top:50%}
     padding: 6% 5% 2% 5%;
 }
 .naviIcon > a:hover{
-    color: #47C83E;
+    color: #fce93d;
 }
 .naviIcon > a:active{
-    color: #2F9D27;
-    border: 0.5px solid #47C83E;
-    background-color: #e0fddd;
+    color: #fce93d;
+    border: 0.5px solid #fce93d;
+    background-color: #fffcdc;
 }
 .instaIcon > a:hover{
     color: #F15F5F;
