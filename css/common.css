@@ -58,7 +58,7 @@ h2{margin-top:50%}
 }
 .conTotal{
     margin-bottom: 5%;
-    border-bottom: 2px solid #5d5d5d;
+    border-top: 2px solid #ddd
 }
 .conTotal::after{clear:both; content:""; display: block;}
 .placeImg{
@@ -79,4 +79,18 @@ h2{margin-top:50%}
 .linkIcon > li > a {
     color: #5d5d5d;
     padding: 6% 5% 2% 5%;
+}
+.naviIcon > a:hover{
+    color: #B2CCFF;
+}
+.naviIcon > a:active{
+    color: #B2CCFF;
+    border: 0.5px solid #B2CCFF;
+}
+.instaIcon > a:hover{
+    color: #FFA7A7;
+}
+.instaIcon > a:active{
+    color: #FFA7A7;
+    border: 0.5px solid #FFA7A7;
 }
