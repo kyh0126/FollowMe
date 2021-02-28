@@ -61,6 +61,7 @@ h2{margin-top:50%}
     border-top: 2px solid #ddd
 }
 .conTotal::after{clear:both; content:""; display: block;}
+.placeName{margin-top: 2%;}
 .contentsAddr{margin-bottom: 3%;}
 .placeImg{
     width: 50%;
