@@ -88,8 +88,7 @@ h2{margin-top:50%}
 .naviIcon > a:active{
     color: #2F9D27;
     border: 0.5px solid #47C83E;
-    background-color: #CEFBC9;
-    opacity: 0.5;
+    background-color: #e0fddd;
 }
 .instaIcon > a:hover{
     color: #F15F5F;
@@ -97,6 +96,5 @@ h2{margin-top:50%}
 .instaIcon > a:active{
     color: #f34343;
     border: 0.5px solid #F15F5F;
-    background-color: #fadddd;
-    opacity: 0.5;
+    background-color: #ffeaea;
 }
