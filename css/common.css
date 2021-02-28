@@ -56,7 +56,12 @@ h2{margin-top:50%}
     margin: 5%;
     overflow: scroll;
 }
-.conTotal{margin-bottom: 10%;}
+.conTotal{
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    border: 2px solid gray;
+    border-radius: 15%;
+}
 .conTotal::after{clear:both; content:""; display: block;}
 .placeImg{
     width: 50%;
@@ -70,6 +75,7 @@ h2{margin-top:50%}
 .linkIcon{
     width: 50%;
     float:left;
-    font-size: 200%;
+    font-size: 220%;
 }
-.naviIcon{margin-bottom: 5%;}
+.naviIcon{margin: 8% 0%;}
+.instaIcon{margin: 8% 0%;}
