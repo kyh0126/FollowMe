@@ -501,7 +501,15 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	jungguPolygon.setMap(map);
 	seoguPolygon.setMap(map);
 	yuseongguPolygon.setMap(map);
-	daedeokguPolygon.setMap(map);  
+	daedeokguPolygon.setMap(map);
+	// 도형에 mouseover 이벤트를 등록한다 
+	kakao.maps.event.addListener(hole, 'mouseover', function() {
+		map.setCursor('pointer');
+	});
+	// 도형에 mouseout 이벤트를 등록한다 
+	kakao.maps.event.addListener(hole, 'mouseout', function() {
+		map.setCursor('default');
+	});
 	// 다각형에 마우스다운 이벤트를 등록합니다 
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() {
 		var currentCity = $("#city").val();
