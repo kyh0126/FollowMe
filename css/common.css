@@ -98,3 +98,11 @@ h2{margin-top:50%}
     border: 0.5px solid #F15F5F;
     background-color: #ffeaea;
 }
+.loadbor > a{
+    letter-spacing: 1px;
+    border: 2px solid #5d5d5d;
+    border-radius: 5%;
+    color: #5d5d5d;
+    padding: 10px 30px;
+    text-decoration: none;
+}
