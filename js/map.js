@@ -519,6 +519,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				location.reload();
 			}else{
 				$(".rightSlide").slideDown(1000);
+				$("#loadMore").show();
+				$(".contents").css("overflow","scroll");
+				$(".contents").css("height","70vh");
 			}
 		}
 		DaejeonPlace();
