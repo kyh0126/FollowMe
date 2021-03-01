@@ -26,7 +26,7 @@
 				<h2>추천 장소 !</h2>
 				<div class = "contents" id = "contents"></div>
 				<div style="width:100%; text-align:center; padding:20px; font-size:25px; ">
-					<li id ="loadMore" class="loadbor"><a href="#" style="letter-spacing: 1px;border:2px solid rgb(0, 0, 0); color: black; padding:10px 30px; ">The More</a></li>
+					<li id ="loadMore" class="loadbor"><a href="#" style="letter-spacing: 1px;border:2px solid rgb(0, 0, 0); color: black; padding:10px 30px; ">더보기</a></li>
 				</div>
 			</div>
 			<div class = "introContents">
@@ -44,6 +44,17 @@
 		$("#map").dblclick(function() {
 			location.reload();
 		});
+		$(".moreBox").slice(0, 6).show();
+			if ($(".blogBox:hidden").length != 0) {
+				$("#loadMore").show();
+			}
+			$("#loadMore").on('click', function (e) {
+				e.preventDefault();
+				$(".moreBox:hidden").slice(0, 6).slideDown();
+				if ($(".moreBox:hidden").length == 0) {
+					$("#loadMore").fadeOut('slow');
+				}
+			});
 	});
     </script>
 </html>
