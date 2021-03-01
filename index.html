@@ -47,10 +47,9 @@
 
 		$("#loadMore").on('click', function (e) {
 			e.preventDefault();
+			$("#loadMore").fadeOut('slow');
 			$(".contents").css("overflow","scroll");
 			$(".contents").css("height","70vh");
-			$("#loadMore").fadeOut('slow');
-
 		});
 	});
     </script>
