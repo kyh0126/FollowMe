@@ -507,19 +507,17 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		var currentCity = $("#city").val();
 		if($("#city").val() == ''){
 			$("#city").val("동구");
-			$("#loadMore").show();
 			$(".introContents").toggle();
 			$(".rightSlide").slideDown(1000);
 		}else{
 			$("#city").val();
 			$("#city").val("동구");
-			$("#loadMore").show();
 			if(currentCity == $("#city").val()){
 				$("#city").val();
 				location.reload();
 			}else{
 				$(".rightSlide").slideDown(1000);
-				$("#loadMore").fadeIn('slow');
+				$("#loadMore").show();
 				$(".contents").css("overflow","hidden");
 				$(".contents").css("height","67vh");
 			}
@@ -539,6 +537,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				location.reload();
 			}else{
 				$(".rightSlide").slideDown(1000);
+				$("#loadMore").show();
+				$(".contents").css("overflow","hidden");
+				$(".contents").css("height","67vh");
 			}
 		}
 		DaejeonPlace();
@@ -556,6 +557,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				location.reload();
 			}else{
 				$(".rightSlide").slideDown(1000);
+				$("#loadMore").show();
+				$(".contents").css("overflow","hidden");
+				$(".contents").css("height","67vh");
 			}
 		}
 		DaejeonPlace();
@@ -573,6 +577,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				location.reload();
 			}else{
 				$(".rightSlide").slideDown(1000);
+				$("#loadMore").show();
+				$(".contents").css("overflow","hidden");
+				$(".contents").css("height","67vh");
 			}
 		}
 		DaejeonPlace();
@@ -590,6 +597,9 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 				location.reload();
 			}else{
 				$(".rightSlide").slideDown(1000);
+				$("#loadMore").show();
+				$(".contents").css("overflow","hidden");
+				$(".contents").css("height","67vh");
 			}
 		}
 		DaejeonPlace();
