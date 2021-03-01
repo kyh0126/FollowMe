@@ -502,48 +502,20 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	seoguPolygon.setMap(map);
 	yuseongguPolygon.setMap(map);
 	daedeokguPolygon.setMap(map);
-	// 도형에 mouseover,mouseout 이벤트를 등록한다 
-	kakao.maps.event.addListener(dongguPolygon, 'mouseover', function() {
-		map.setCursor('pointer');
-	});
-	kakao.maps.event.addListener(dongguPolygon, 'mouseout', function() {
-		map.setCursor('default');
-	});
-	kakao.maps.event.addListener(jungguPolygon, 'mouseover', function() {
-		map.setCursor('pointer');
-	});
-	kakao.maps.event.addListener(jungguPolygon, 'mouseout', function() {
-		map.setCursor('default');
-	});  
-	kakao.maps.event.addListener(seoguPolygon, 'mouseover', function() {
-		map.setCursor('pointer');
-	});
-	kakao.maps.event.addListener(seoguPolygon, 'mouseout', function() {
-		map.setCursor('default');
-	});    
-	kakao.maps.event.addListener(yuseongguPolygon, 'mouseover', function() {
-		map.setCursor('pointer');
-	}); 
-	kakao.maps.event.addListener(yuseongguPolygon, 'mouseout', function() {
-		map.setCursor('default');
-	});    
-	kakao.maps.event.addListener(daedeokguPolygon, 'mouseover', function() {
-		map.setCursor('pointer');
-	});
-	kakao.maps.event.addListener(daedeokguPolygon, 'mouseout', function() {
-		map.setCursor('default');
-	});    
 	// 다각형에 마우스다운 이벤트를 등록합니다 
 	kakao.maps.event.addListener(dongguPolygon, 'mousedown', function() {
 		var currentCity = $("#city").val();
 		if($("#city").val() == ''){
 			$("#city").val("동구");
+			$("#loadMore").show();
 			$(".introContents").toggle();
 			$(".rightSlide").slideDown(1000);
 		}else{
 			$("#city").val();
 			$("#city").val("동구");
+			$("#loadMore").show();
 			if(currentCity == $("#city").val()){
+				$("#city").val();
 				location.reload();
 			}else{
 				$(".rightSlide").slideDown(1000);
